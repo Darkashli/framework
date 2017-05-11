@@ -51,13 +51,12 @@ function delete($id)
 	header("Location:" . URL . "student/index");
 }
 
-function view()
-{
+function view(){
 	render("student/view");
 }
 
-function example(){
-	render("student/view.2");
-}
 
+function view_2(){
+	render("student/view_2");
+}
 

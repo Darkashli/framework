@@ -9,15 +9,10 @@
 <body>
 	<nav>
 	<ul>
+	    <li><a href="<?= URL ?>student/view">MVC</a></li>
 		<li><a href="<?= URL ?>home/index">Home</a></li>
 		<li><a href="<?= URL ?>student/index">Students</a></li>
-		<li><a href="<?= URL ?>student/view">MVC</a></li>
-		<li><a href="<?= URL ?>student/view.2">Example</a></li>
-
-
-
-		
-
+		<li><a href="<?= URL ?>student/view_2">Projecten</a></li>
 
 	</ul>
 	</nav>
