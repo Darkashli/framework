@@ -14,6 +14,8 @@ function getStudent($id)
 	return $query->fetch();
 }
 
+
+
 function getAllStudents() 
 {
 	$db = openDatabaseConnection();
@@ -26,6 +28,7 @@ function getAllStudents()
 
 	return $query->fetchAll();
 }
+
 
 function editStudent() 
 {

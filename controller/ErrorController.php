@@ -1,6 +1,6 @@
 <?php
 
-function index()
+function message()
 {
-	echo "Uhmm, durp, een error! 404 ofzo?";
+	echo "error found";
 }

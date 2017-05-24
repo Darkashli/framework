@@ -5,10 +5,10 @@
 			<th>Voornaam</th>
 			<th>Achternaam</th>
 			<th>Geslacht</th>
-			<th colspan="2">Actie</th>
+			<th colspan="3">Actie</th>
 		</tr>
 		
-		<?php foreach ($students as $student) { ?>
+		<?php foreach ($leerlingen as $student) { ?>
 		<tr>
 			<td><?= $student['student_id']; ?></td>
 			<td><?= $student['student_firstname']; ?></td>
@@ -21,4 +21,5 @@
 
 	</table>
 	<a href="<?= URL ?>student/create">Toevoegen</a>
+	
 </div>

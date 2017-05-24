@@ -4,8 +4,10 @@ require(ROOT . "model/StudentModel.php");
 
 function index()
 {
+
 	render("student/index", array(
-		'students' => getAllStudents()
+		'leerlingen' => getAllStudents(),
+		
 	));
 }
 
@@ -17,7 +19,7 @@ function create()
 function createSave()
 {
 	if (!createStudent()) {
-		header("Location:" . URL . "error/index");
+		header("Location:" . URL . "error/message");
 		exit();
 	}
 
@@ -51,12 +53,7 @@ function delete($id)
 	header("Location:" . URL . "student/index");
 }
 
-function view(){
-	render("student/view");
-}
 
 
-function view_2(){
-	render("student/view_2");
-}
+
 

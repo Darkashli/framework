@@ -1,1 +1,19 @@
 
+
+body {
+	background-color: #ecf0f1;
+	padding: 0px auto;
+	margin: 0px auto;
+/*	padding-left: 10px;
+*/	
+
+}
+
+table, th, tr {
+border: 1 solid blue;
+}
+
+footer{
+	text-align: center;
+	color: blue;
+}
