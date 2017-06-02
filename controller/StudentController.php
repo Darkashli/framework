@@ -11,6 +11,7 @@ function index()
 	));
 }
 
+
 function create()
 {
 	render("student/create");
@@ -25,6 +26,7 @@ function createSave()
 
 	header("Location:" . URL . "student/index");
 }
+
 
 function edit($id)
 {
