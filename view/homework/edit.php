@@ -3,7 +3,7 @@
 	<form action="<?= URL ?>homework/editSave" method="post">
 	
 		<input type="text" name="subject" value="<?= $homework['subject']; ?>">
-		<input type="text" name="contents" value="<?= $homework['scontents']; ?>">
+		<input type="text" name="contents" value="<?= $homework['contents']; ?>">
 		<input type="text" name="pages" value="<?= $homework['pages']; ?>">
 
 

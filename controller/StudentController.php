@@ -20,7 +20,7 @@ function create()
 function createSave()
 {
 	if (!createStudent()) {
-		header("Location:" . URL . "error/message");
+		header("Location:" . URL . "Error/message");
 		exit();
 	}
 
