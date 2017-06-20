@@ -2,11 +2,12 @@
 
 require(ROOT . "model/StudentModel.php");
 
+
 function index()
 {
 
 	render("student/index", array(
-		'leerlingen' => getAllStudents(),
+		'students' => getAllStudents(),
 		
 	));
 }
@@ -24,31 +25,33 @@ function createSave()
 		exit();
 	}
 
-	header("Location:" . URL . "student/index");
+	header("Location:" . URL . "Student/index");
 }
 
 
 function edit($id)
 {
 	render("student/edit", array(
-		'student' => getStudent($id)
+		'st' => getStudent($id),
 	));
 }
 
+
 function editSave()
 {
-	if (!editStudent()) {
-		header("Location:" . URL . "error/index");
+	if (editStudent() != true) {
+		header("Location:" . URL . "Error/message");
 		exit();
 	}
 
 	header("Location:" . URL . "student/index");
-} 
+}
+
 
 function delete($id)
 {
 	if (!deleteStudent($id)) {
-		header("Location:" . URL . "error/index");
+		header("Location:" . URL . "Error/message");
 		exit();
 	}
 

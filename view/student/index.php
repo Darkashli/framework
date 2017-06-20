@@ -8,7 +8,7 @@
 			<th colspan="3">Actie</th>
 		</tr>
 		
-		<?php foreach ($leerlingen as $student) { ?>
+		<?php foreach ($students as $student) { ?>
 		<tr>
 			<td><?= $student['student_id']; ?></td>
 			<td><?= $student['student_firstname']; ?></td>
